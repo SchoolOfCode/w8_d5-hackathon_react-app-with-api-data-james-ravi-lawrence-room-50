@@ -2,6 +2,7 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import Button from "./components/button";
 import Dropdown from "./components/dropdown";
+import Chuck from './images/chuck.jpeg'
 
 function App() {
 
@@ -49,12 +50,16 @@ function App() {
 
   //3. Send the state as a prop to Dropdown component
   return (
-    <div>
+
+    <div class="box">
+      <h2>Chuck Norris Joke Generator</h2>
+      <img src={Chuck} height={200} width={200} />
       <h1>Chuck Norris Joke Generator</h1>
       <Button handleClick={jokeGetter} buttonText="Get Joke"/>
       <Button handleClick={jokeGetter} buttonText="todo.." />
       <Dropdown handleChange={handleChange} options={categoryList}/>
       <p>{joke}</p>
+      <Dropdown /> 
     </div>
   );
 }
