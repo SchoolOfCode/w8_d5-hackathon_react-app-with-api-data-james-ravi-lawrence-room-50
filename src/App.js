@@ -2,6 +2,7 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import Button from "./components/button";
 import Dropdown from "./components/dropdown";
+import Chuck from './images/chuck.jpeg'
 
 function App() {
   const [joke, setJoke] = useState("");
@@ -30,12 +31,12 @@ function App() {
   }
 
   return (
-    <div>
-      <h1>Chuck Norris Joke Generator</h1>
-      <Button handleClick={jokeGetter} buttonText="Get Random Joke" />
-      <Button handleClick={jokeGetter} buttonText="James" />
-      <Dropdown />
+    <div class="box">
+      <h2>Chuck Norris Joke Generator</h2>
+      <img src={Chuck} height={200} width={200} />
       <p>{joke}</p>
+      <Button handleClick={jokeGetter} buttonText="Get Random Joke" />
+      <Dropdown /> 
     </div>
   );
 }
