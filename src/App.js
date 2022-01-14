@@ -56,7 +56,7 @@ function App() {
       <img src={Chuck} height={200} width={200} alt="chuck" />
       <p>{joke}</p>
       <Button handleClick={jokeGetter} buttonText="Get Joke"/>
-      <Button handleClick={jokeGetter} buttonText="todo.." />
+      {/* <Button handleClick={jokeGetter} buttonText="todo.." /> */}
       <Dropdown handleChange={handleChange} options={categoryList}/>
 
     </div>
