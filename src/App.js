@@ -53,7 +53,7 @@ function App() {
 
     <div className="box">
       <h1>Chuck Norris Joke Generator</h1>
-      <img src={Chuck} height={200} width={200} alt="image of chuck norris" />
+      <img src={Chuck} height={200} width={200} alt="chuck" />
       <p>{joke}</p>
       <Button handleClick={jokeGetter} buttonText="Get Joke"/>
       <Button handleClick={jokeGetter} buttonText="todo.." />
