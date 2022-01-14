@@ -52,13 +52,13 @@ function App() {
   return (
 
     <div class="box">
-      <h2>Chuck Norris Joke Generator</h2>
-      <img src={Chuck} height={200} width={200} />
       <h1>Chuck Norris Joke Generator</h1>
+      <img src={Chuck} height={200} width={200} />
+      <p>{joke}</p>
       <Button handleClick={jokeGetter} buttonText="Get Joke"/>
       <Button handleClick={jokeGetter} buttonText="todo.." />
       <Dropdown handleChange={handleChange} options={categoryList}/>
-      <p>{joke}</p>
+
     </div>
   );
 }
