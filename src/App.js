@@ -18,7 +18,7 @@ function App() {
   }
 
   useEffect(() => {
-    fetchData();
+    // fetchData();
     fetchCategories(); //2. Gets called once when page is loaded
   }, []);
 
