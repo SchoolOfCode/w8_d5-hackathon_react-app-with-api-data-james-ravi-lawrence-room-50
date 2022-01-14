@@ -20,12 +20,13 @@ const [joke,setJoke] = useState("");
   function jokeGetter(){
      fetchData();
   }
-
+  
 
 return(
   <div>
       <h1>Chuck Norris Joke Generator</h1>
       <Button handleClick= {jokeGetter} buttonText = "Get Random Joke"/>
+      <Button handleClick= {jokeGetter} buttonText = "James"/>
       <p>{joke}</p>   
   </div>
   
