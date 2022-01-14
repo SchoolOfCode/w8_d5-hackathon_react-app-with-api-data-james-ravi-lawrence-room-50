@@ -1,6 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
 import {useEffect, useState} from "react";
+import Button from "./components/button"
 
 function App() {
 
@@ -16,7 +17,7 @@ const [joke,setJoke] = useState("");
     fetchData();
   },[])
 
-  function handleClick(){
+  function jokeGetter(){
      fetchData();
   }
 
@@ -24,7 +25,7 @@ const [joke,setJoke] = useState("");
 return(
   <div>
       <h1>Chuck Norris Joke Generator</h1>
-      <button onClick={handleClick}>click me</button>
+      <Button handleClick= {jokeGetter} buttonText = "Get Random Joke"/>
       <p>{joke}</p>   
   </div>
   
