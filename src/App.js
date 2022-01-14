@@ -51,7 +51,7 @@ function App() {
   //3. Send the state as a prop to Dropdown component
   return (
 
-    <div class="box">
+    <div className="box">
       <h1>Chuck Norris Joke Generator</h1>
       <img src={Chuck} height={200} width={200} />
       <p>{joke}</p>

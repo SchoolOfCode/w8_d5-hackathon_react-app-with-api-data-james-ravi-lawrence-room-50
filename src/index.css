@@ -67,3 +67,7 @@ body{
 .box button:focus{
   outline: none;
 }
+
+.dropdown-option{
+  text-transform:uppercase;
+}

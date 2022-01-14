@@ -1,4 +1,5 @@
 import React from "react";
+import Option from "../option"
 
 function Dropdown({handleChange, options}) { 
   return (
@@ -6,7 +7,7 @@ function Dropdown({handleChange, options}) {
       <label htmlFor="Categories">Choose a joke category:</label>
       <select onChange={handleChange} name="categories" id="Categories">
       {options.map(function(item){
-        console.log(item)
+        return <Option key={item} value={item} text={item[0].toUpperCase() + item.substring(1)}/>
       })}
       </select>
     </div>
