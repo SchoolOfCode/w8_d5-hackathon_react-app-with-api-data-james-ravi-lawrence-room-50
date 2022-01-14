@@ -59,7 +59,6 @@ function App() {
       <Button handleClick={jokeGetter} buttonText="todo.." />
       <Dropdown handleChange={handleChange} options={categoryList}/>
       <p>{joke}</p>
-      <Dropdown /> 
     </div>
   );
 }
